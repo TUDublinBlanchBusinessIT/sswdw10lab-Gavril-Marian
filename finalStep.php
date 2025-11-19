@@ -15,15 +15,16 @@ echo "<BR>";
 
 // if the luggage session variable is on
 if (isset($_SESSION['luggage']) && $_SESSION['luggage'] == 1){
- echo $_SESSION['subTenKG'];
+ 
 
     //echo the amount of bags under ten kilos the passenger is bringing
-    
+    echo "Number of Bags Under 10 KG: " . $_SESSION['subTenKG'];
     echo "<BR>";
   
     //echo the amount of bags over ten kilos the passenger is bringing
-  echo $_SESSION['overTenKG'];
-}
+    echo "Number of Bags Between 10 and 20 KG: " . $_SESSION['overTenKG'];
+    echo "<BR>";
+} 
 //end if block
 
 ?>
